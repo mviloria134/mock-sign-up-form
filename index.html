@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="logo-sidebar">
+        <h1>Travelord</h1>
+        <img src="background.jpg" alt="interior glass ceiling architecture" width="1200">
+        <p class="photo-attribution">
+            Photo by <a target="_blank" href="https://unsplash.com/@thealiaziz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ali Aziz</a> on <a href="https://unsplash.com/photos/stained-glass-dome-in-paris-FZ7yMBQCFXM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
+        </p>
+    </section>
+    <main>
+        <header class="header-blurb">
+            <p>This is not a real online service! But if it were, you could make your travel dreams a reality.</p>
+            <p>Sign up today and embark on the trip of a lifetime.</p>
+        </header>
+        <section class="form-section">
+            <form action="">
+                <section class="form-inputs">
+                    <h2>Join Us</h2>
+
+                    <div class="form-field">
+                        <label for="first-name">First Name</label>
+                        <input 
+                            type="text"
+                            id="first-name"
+                            name="first-name">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="last-name">Last Name</label>
+                        <input 
+                            type="text"
+                            id="last-name"
+                            name="last-name">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input 
+                            type="email"
+                            id="email"
+                            name="email">
+                    </div>
+
+                    <!-- TODO: phone number pattern -->
+                    <div class="form-field">
+                        <label for="phone-number">Phone Number</label>
+                        <input 
+                            type="tel"
+                            id="phone-number"
+                            name="phone-number">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="password">Password</label>
+                        <input 
+                            type="password"
+                            id="password"
+                            name="password"
+                            required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="password-confirm">Confirm Password</label>
+                        <input 
+                            type="password"
+                            id="password-confirm"
+                            name="password-confirm"
+                            required>
+                    </div>
+                </section>
+                <section class="submission">
+                    <button type="submit">Create Account</button>
+                    <p class="has-account">Already have an account? <a href="#">Log in</a></p>
+                </section>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
