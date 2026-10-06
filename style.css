@@ -1,3 +1,13 @@
+/* fonts */
+@font-face {
+    font-family: 'Roman SD';
+    src: url('fonts/RomanSD.woff2') format('woff2'),
+        url('fonts/RomanSD.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* CSS reset adapted from: https://www.joshwcomeau.com/css/custom-css-reset/ */
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
@@ -53,6 +63,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    align-items: center;
 
     background: top/cover url("background.jpg");
     flex: 1;
@@ -69,8 +80,22 @@ body {
 
     background-color: rgb(0 0 0 / 50%);
     width: 100%;
+    padding: 1.5rem;
+
     text-align: center;
-    padding: 1rem;
+    font-size: 2.5rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    font-family: 'Roman SD', 'Times New Roman', Times, serif;
+}
+
+.logo-sidebar .photo-attribution {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    margin-bottom: 12px;
+    a {
+        color: white;
+    }
 }
 
 .form-section {
