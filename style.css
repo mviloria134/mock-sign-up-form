@@ -83,7 +83,7 @@ body {
     padding: 1.5rem;
 
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     letter-spacing: 0.4rem;
     text-transform: uppercase;
     font-family: 'Roman SD', 'Times New Roman', Times, serif;
@@ -93,11 +93,13 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 12px;
     margin-bottom: 12px;
+    
     a {
         color: white;
     }
 }
 
-.form-section {
+main {
     flex: 2;
+    width: 100%;
 }
