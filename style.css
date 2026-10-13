@@ -8,6 +8,27 @@
     font-display: swap;
 }
 
+/* variables */
+
+:root {
+  --color-main: #f5f5f8;
+  --color-secondary: white;
+  --color-accent: #4294af;
+
+  --main-padding-left: 2rem;
+  --main-padding-right: 8rem;
+
+  --header-padding-top: 15vh;
+  --header-padding-bottom: 2.5rem;
+  --header-font-size: 1.2rem;
+
+  --form-input-padding-top: 1rem;
+  --form-input-padding-bottom: 2rem;
+
+  --submission-padding-top: 2rem;
+  --submission-padding-bottom:15vh;
+}
+
 /* CSS reset adapted from: https://www.joshwcomeau.com/css/custom-css-reset/ */
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
@@ -56,6 +77,8 @@ h1, h2, h3, h4, h5, h6 {
 body {
     display: flex;
     height: 100vh;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .logo-sidebar {
@@ -90,7 +113,6 @@ body {
 }
 
 .logo-sidebar .photo-attribution {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 12px;
     margin-bottom: 12px;
     
@@ -100,6 +122,31 @@ body {
 }
 
 main {
-    flex: 2;
-    width: 100%;
+  flex: 2;
+  width: 100%;
+}
+
+main .header-blurb {
+  padding: 
+    var(--header-padding-top)
+    var(--main-padding-right)
+    var(--header-padding-bottom)
+    var(--main-padding-left);
+
+  background-color: var(--color-main);
+  font-size: var(--header-font-size);
+  font-weight: 600;
+  
+  p + p {
+    margin-top: 1em;
+  }
+}
+
+.form-section .form-inputs {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.form-section .form-field label{
+  display: block;
 }
