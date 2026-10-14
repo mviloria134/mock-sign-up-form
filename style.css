@@ -15,6 +15,7 @@
   --color-secondary: white;
   --color-accent: #4294af;
   --color-shadow: #dfdfe7;
+  --color-input-border-default: #E5E7EB;
 
   --main-padding-left: 2rem;
   --main-padding-right: 8rem;
@@ -167,5 +168,17 @@ main .header-blurb {
     text-transform: uppercase;
     font-size: clamp(10px, 0.4rem + .5vw, 0.8rem);
     letter-spacing: 0.1rem;
+  }
+
+  input {
+    padding-left: 1ch;
+    border: var(--color-input-border-default) 1px solid;
+    border-radius: 2px;
+  }
+
+  input:focus {
+    appearance: none;
+    border-color: var(--color-accent);
+    border-width: 1px;
   }
 }
