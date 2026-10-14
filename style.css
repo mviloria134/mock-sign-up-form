@@ -164,5 +164,8 @@ main .header-blurb {
 
   label {
     display: block;
+    text-transform: uppercase;
+    font-size: clamp(10px, 0.4rem + .5vw, 0.8rem);
+    letter-spacing: 0.1rem;
   }
 }
