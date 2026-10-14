@@ -16,6 +16,7 @@
   --color-accent: #4294af;
   --color-shadow: #dfdfe7;
   --color-input-border-default: #E5E7EB;
+  --color-input-invalid: rgb(184, 37, 37);
 
   --main-padding-left: 2rem;
   --main-padding-right: 8rem;
@@ -180,5 +181,10 @@ main .header-blurb {
     appearance: none;
     border-color: var(--color-accent);
     border-width: 1px;
+    box-shadow: var(--color-shadow) 2px 2px 10px;
+  }
+
+  input:user-invalid {
+    border-color: var(--color-input-invalid);
   }
 }
