@@ -155,7 +155,7 @@ main .header-blurb {
   display: flex;
   flex-flow: row wrap;
   row-gap: 1rem;
-  column-gap: 2rem;
+  column-gap: 4rem;
 
   background-color: var(--color-secondary);
   box-shadow: var(--color-shadow) 0 5px 10px;
