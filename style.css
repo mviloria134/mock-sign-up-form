@@ -13,7 +13,7 @@
 :root {
   --color-main: #f5f5f8;
   --color-secondary: white;
-  --color-accent: #4294af;
+  --color-accent: #608093;
   --color-shadow: #dfdfe7;
   --color-input-border-default: #E5E7EB;
   --color-input-invalid: rgb(184, 37, 37);
@@ -212,6 +212,12 @@ main .header-blurb {
     box-shadow: 2px 5px 5px var(--color-shadow);
 
     color: white;
+    font-weight: bold;
+  }
+
+  p a {
+    text-decoration: none;
+    color: var(--color-accent);
     font-weight: bold;
   }
 }
