@@ -30,6 +30,9 @@
 
   --submission-padding-top: 2rem;
   --submission-padding-bottom:15vh;
+
+  --button-padding-vertical: 0.5rem;
+  --button-padding-horizontal: 2.5rem;
 }
 
 /* CSS reset adapted from: https://www.joshwcomeau.com/css/custom-css-reset/ */
@@ -186,5 +189,29 @@ main .header-blurb {
 
   input:user-invalid {
     border-color: var(--color-input-invalid);
+  }
+}
+
+.submission {
+  padding:
+    var(--submission-padding-top)
+    var(--main-padding-left)
+    var(--submission-padding-bottom);
+
+  button {
+    margin-bottom: var(--submission-padding-top);
+    padding:
+      var(--button-padding-vertical)
+      var(--button-padding-horizontal);
+    
+    background-color: var(--color-accent);
+
+    border: none;
+    border-radius: 5px;
+
+    box-shadow: 2px 5px 5px var(--color-shadow);
+
+    color: white;
+    font-weight: bold;
   }
 }
