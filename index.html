@@ -53,7 +53,9 @@
                         <input 
                             type="tel"
                             id="phone-number"
-                            name="phone-number">
+                            name="phone-number"
+                            placeholder="555-123-4567"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <!-- regex from pattern validation section of https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/tel#examples -->
                     </div>
                     <!-- TODO: password validation -->
                     <div class="form-field">
