@@ -159,13 +159,16 @@ main .header-blurb {
     var(--form-input-padding-bottom)
     var(--main-padding-left);
 
-  display: flex;
-  flex-flow: row wrap;
-  row-gap: 1rem;
-  column-gap: 4rem;
-
   background-color: var(--color-secondary);
   box-shadow: var(--color-shadow) 0 5px 10px;
+
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 1rem;
+    column-gap: 4rem;
+    max-width: 700px;
+  }
 
   h2 {
     width: 100%;
