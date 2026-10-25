@@ -94,9 +94,12 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-
+    
     background: top/cover url("background.jpg");
     flex: 1;
+    
+    max-width: 700px;
+    min-width: 350px;
 }
 
 .logo-sidebar h1,
