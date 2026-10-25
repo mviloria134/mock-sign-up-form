@@ -17,6 +17,7 @@
   --color-shadow: #dfdfe7;
   --color-input-border-default: #E5E7EB;
   --color-input-invalid: rgb(184, 37, 37);
+  --color-input-valid: rgb(37, 184, 54);
 
   --main-padding-left: 2rem;
   --main-padding-right: 8rem;
@@ -174,7 +175,11 @@ main .header-blurb {
     letter-spacing: 0.1rem;
   }
 
-  input[minlength] + span::before {
+  input + span {
+    position: relative;
+  }
+
+  input[minlength] + span::after {
     width: 100%;
     display: block;
     text-transform: uppercase;
@@ -199,6 +204,20 @@ main .header-blurb {
 
   input:user-invalid {
     border-color: var(--color-input-invalid);
+  }
+
+  input:user-invalid + span::before {
+    position: absolute;
+    left: 5px;
+    content: '✖';
+    color: var(--color-input-invalid);
+  }
+
+  input:user-valid + span::before {
+    position: absolute;
+    left: 5px;
+    content: '✓';
+    color: var(--color-input-valid);
   }
 }
 
