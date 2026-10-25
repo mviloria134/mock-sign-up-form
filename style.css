@@ -166,13 +166,28 @@ main .header-blurb {
 
   h2 {
     width: 100%;
+    display: inline;
+  }
+
+  h2 + span {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    letter-spacing: 0.1rem;
+    margin-top: -1rem;
   }
 
   label {
     display: block;
+    position: relative;
     text-transform: uppercase;
     font-size: clamp(10px, 0.4rem + .5vw, 0.8rem);
     letter-spacing: 0.1rem;
+  }
+
+  label:has(+ input:required)::after {
+    content: '*';
+    padding-left: 2px;
   }
 
   input + span {
